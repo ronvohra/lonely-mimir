@@ -68,5 +68,10 @@ tasks.withType<KotlinCompile> {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("io.ktor.server.netty.EngineMain")
+}
+
+// For Heroku deployment
+tasks {
+    create("stage").dependsOn("installDist")
 }

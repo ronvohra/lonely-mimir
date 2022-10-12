@@ -42,8 +42,8 @@ jobs:
         java: [ '17' ]
     if: github.ref == 'refs/heads/master'
     steps:
+    - run: git pull
     - name: Deploy to Heroku
-      run: git pull
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}

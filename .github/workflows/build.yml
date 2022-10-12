@@ -36,11 +36,14 @@ jobs:
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         java: [ '17' ]
     if: github.ref == 'refs/heads/master'
     steps:
+    - name: Configure git to trust the workspace despite the different owner
+      run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
     - name: Deploy to Heroku
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:

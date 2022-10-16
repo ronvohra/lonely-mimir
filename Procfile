@@ -1,1 +1,1 @@
-web: ./build/install/io.github.ronvohra.lonelymimir/bin/io.github.ronvohra.lonelymimir
+web: ./build/install/lonely-mimir/bin/lonely-mimir

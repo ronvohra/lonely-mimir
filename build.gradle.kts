@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val ktorVersion = "2.1.2"
+val ktorVersion = "2.1.3"
 val kotlinVersion = "1.7.20"
 val exposedVersion = "0.39.2"
 val flywayVersion = "9.4.0"

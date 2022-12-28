@@ -15,7 +15,7 @@ val apacheCsvVersion = "1.9.0"
 
 plugins {
     kotlin("jvm") version "1.7.20"
-    kotlin("plugin.serialization") version "1.7.20"
+    kotlin("plugin.serialization") version "1.8.0"
     id("org.jetbrains.kotlinx.kover") version "0.6.0"
     application
 }
